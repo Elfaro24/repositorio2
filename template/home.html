@@ -1,0 +1,12 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {% for publicacion in publicaciones_list %}
+
+    <a href="{% url 'detail' publicaciones.pk %}"> {{ publicacion.titulo}}</a>
+
+    {% endfor %}
+
+{% endblock %}
